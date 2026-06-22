@@ -78,4 +78,4 @@ Aplikasi ini sangat siap dan disarankan untuk di-deploy secara gratis menggunaka
 6. (Opsional) Tambahkan domain kustom (seperti `beautyexperience.my.id`) melalui menu **Settings > Domains** di dashboard Vercel, lalu ikuti instruksi konfigurasi *A Record*/*CNAME* di panel domain Anda.
 
 ---
-*Created with ❤️ by Antigravity for Pure Beauty Experience.*
+*Created with by Maulana Bagus Sudrajat for Pure Beauty Experience.*
