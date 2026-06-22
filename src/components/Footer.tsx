@@ -107,7 +107,7 @@ export default function Footer() {
       <div className={styles.bottom}>
         <div className="container">
           <p>© 2026 Pure Beauty Experience. All rights reserved.</p>
-          <p className={styles.bottomSub}>Made with 🌸 in Bekasi</p>
+          <p className={styles.bottomSub}>Made with 🌸 by Maulana Bagus</p>
         </div>
       </div>
     </footer>
