@@ -3,6 +3,8 @@
   color: rgba(255, 240, 243, 0.8);
   position: relative;
   margin-top: 0;
+  transform: translateZ(0);
+  will-change: transform;
 }
 
 .wave {
