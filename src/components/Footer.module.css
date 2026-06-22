@@ -1,0 +1,212 @@
+.footer {
+  background: var(--color-bg-dark);
+  color: rgba(255, 240, 243, 0.8);
+  position: relative;
+  margin-top: 0;
+}
+
+.wave {
+  line-height: 0;
+  overflow: hidden;
+}
+
+.wave svg {
+  display: block;
+  width: 100%;
+  height: 80px;
+  background: var(--color-bg);
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr 1.2fr;
+  gap: 48px;
+  padding: 64px 0 48px;
+  align-items: start;
+}
+
+.brand {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.logo {
+  border-radius: 50%;
+  border: 2px solid rgba(201, 149, 106, 0.4);
+  flex-shrink: 0;
+}
+
+.brandName {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-gold-light);
+  margin-bottom: 4px;
+}
+
+.brandTagline {
+  font-style: italic;
+  color: var(--color-primary-light);
+  font-size: 0.85rem;
+  margin-bottom: 12px;
+}
+
+.brandDesc {
+  font-size: 0.85rem;
+  line-height: 1.7;
+  color: rgba(255, 240, 243, 0.6);
+}
+
+.links {
+  display: flex;
+  gap: 32px;
+}
+
+.linkTitle {
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  color: var(--color-gold-light);
+  margin-bottom: 16px;
+  letter-spacing: 0.05em;
+}
+
+.linkList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.linkList li, .linkList a {
+  font-size: 0.85rem;
+  color: rgba(255, 240, 243, 0.6);
+  transition: color var(--transition);
+}
+
+.linkList a:hover {
+  color: var(--color-primary-light);
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+}
+
+.socialBtns {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.socialBtn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  border-radius: var(--radius-full);
+  font-size: 0.82rem;
+  font-weight: 600;
+  transition: all var(--transition);
+  border: 1px solid transparent;
+}
+
+.socialBtn span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.instagram {
+  background: rgba(228, 64, 95, 0.1);
+  color: #f4699d;
+  border-color: rgba(228, 64, 95, 0.2);
+}
+
+.instagram:hover {
+  background: rgba(228, 64, 95, 0.2);
+  transform: translateX(4px);
+}
+
+.tiktok {
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(255, 240, 243, 0.8);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.tiktok:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateX(4px);
+}
+
+.whatsapp {
+  background: rgba(37, 211, 102, 0.1);
+  color: #4ddb80;
+  border-color: rgba(37, 211, 102, 0.2);
+}
+
+.whatsapp:hover {
+  background: rgba(37, 211, 102, 0.2);
+  transform: translateX(4px);
+}
+
+.bottom {
+  border-top: 1px solid rgba(201, 149, 106, 0.15);
+  padding: 20px 0;
+  text-align: center;
+}
+
+.bottom p {
+  font-size: 0.82rem;
+  color: rgba(255, 240, 243, 0.4);
+}
+
+.bottomSub {
+  margin-top: 4px;
+  color: rgba(255, 240, 243, 0.3) !important;
+}
+
+@media (max-width: 900px) {
+  .inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    padding: 48px 0 40px;
+  }
+  .brand { grid-column: 1 / -1; }
+  .socials { grid-column: 1 / -1; }
+  .socialBtns { flex-direction: row; flex-wrap: wrap; }
+  .socialBtn { flex: 1; min-width: 160px; }
+}
+
+@media (max-width: 600px) {
+  .inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 32px 0 32px;
+    text-align: center;
+  }
+  .brand { 
+    flex-direction: column; 
+    align-items: center; 
+    gap: 16px; 
+  }
+  .links { 
+    flex-direction: column; 
+    gap: 32px; 
+    align-items: center; 
+  }
+  .socials { 
+    align-items: center; 
+  }
+  .socialBtns { 
+    flex-direction: column; 
+    width: 100%; 
+    max-width: 280px; 
+    margin: 0 auto; 
+  }
+  .socialBtn { 
+    justify-content: center; 
+    min-width: unset; 
+  }
+  .wave svg { height: 40px; }
+}
