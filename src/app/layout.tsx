@@ -68,6 +68,9 @@ export const metadata: Metadata = {
     apple: [{ url: "/images/logo.jpeg", sizes: "180x180" }],
     shortcut: "/images/logo.jpeg",
   },
+  verification: {
+    google: "TJplMG4mlKo1DcpzWKL8GaMo_RamWElK9O7JtB5iVwc",
+  },
 };
 
 export default function RootLayout({
