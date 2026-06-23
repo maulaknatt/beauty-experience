@@ -23,7 +23,7 @@ const benefits = [
 ];
 
 const stats = [
-  { icon: <Users size={24} />, value: "50+", label: "Peserta" },
+  { icon: <Users size={24} />, value: "15+", label: "Peserta" },
   { icon: <Star size={24} />, value: "100%", label: "Kepuasan" },
   { icon: <Award size={24} />, value: "1", label: "Kolaborasi Brand" },
   { icon: <Heart size={24} />, value: "∞", label: "Kenangan" },
